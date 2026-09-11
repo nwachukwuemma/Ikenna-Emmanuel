@@ -152,17 +152,17 @@ export const CustomizeDrawer = ({
 
         {/* Tab Controls */}
         <div className="flex items-center gap-1.5 p-2 border-b border-[#333333] bg-[#111111] text-xs font-semibold">
-          {(['profile', 'picture', 'project'] as const).map((tab) => (
+          {(['profile', 'project'] as const).map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab)}
+              onClick={() => setActiveTab(tab as any)}
               className={`flex-1 py-2 rounded-lg text-center transition-all capitalize cursor-pointer ${
                 activeTab === tab
                   ? 'bg-gray-900 text-white shadow-xs'
                   : 'text-gray-400 hover:text-white hover:bg-[#222222]'
               }`}
             >
-              {tab === 'profile' ? 'Profile' : tab === 'picture' ? 'Photo' : 'Project'}
+              {tab === 'profile' ? 'Profile' : 'Project'}
             </button>
           ))}
         </div>

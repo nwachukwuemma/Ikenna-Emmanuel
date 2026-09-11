@@ -47,12 +47,11 @@ export default function App() {
           title: (!parsed.title || !parsed.title.includes('IT Support'))
             ? initialProfile.title
             : parsed.title,
-          // If avatar was the old downward image, update it to the direct-facing portrait
-          avatarUrl: (!parsed.avatarUrl || parsed.avatarUrl.includes('photo-1534528741775'))
-            ? initialProfile.avatarUrl
-            : parsed.avatarUrl,
-          avatarPosition: parsed.avatarPosition || initialProfile.avatarPosition || 'center 18%',
-          avatarScale: parsed.avatarScale || initialProfile.avatarScale || 1.05
+          
+          // HARDCODE avatar so it cannot be customized/lost on deploy
+          avatarUrl: initialProfile.avatarUrl,
+          avatarPosition: initialProfile.avatarPosition,
+          avatarScale: initialProfile.avatarScale
         };
       }
       return initialProfile;

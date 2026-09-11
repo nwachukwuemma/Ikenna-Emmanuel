@@ -134,7 +134,7 @@ export const Hero = ({
               {/* Tech Blue Ambient Glow */}
               <div className="absolute -inset-2 bg-gradient-to-tr from-blue-600/25 via-cyan-500/20 to-blue-400/25 rounded-3xl blur-md -z-10 group-hover:opacity-100 transition-opacity" />
               
-              <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-2xl sm:rounded-3xl overflow-hidden border-4 border-white shadow-xl ring-2 ring-blue-100 bg-[#222222]">
+              <div className="relative w-52 h-72 sm:w-64 sm:h-[22rem] md:w-72 md:h-[26rem] rounded-2xl sm:rounded-3xl overflow-hidden border-4 border-white shadow-xl ring-2 ring-blue-100 bg-[#222222]">
                 <img
                   src={profile.avatarUrl}
                   alt={profile.name}
@@ -151,16 +151,6 @@ export const Hero = ({
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   <span>Ready for SOC &amp; IT Roles</span>
                 </div>
-
-                {/* Prominent Change Photo button overlay */}
-                <button
-                  onClick={onOpenCustomizer}
-                  className="absolute bottom-3 inset-x-3 py-2 px-3 bg-gray-900/85 hover:bg-black text-white text-sm font-semibold rounded-xl flex items-center justify-center gap-1.5 transition-all shadow-md cursor-pointer border border-white/20 backdrop-blur-xs"
-                  title="Upload or Adjust Face Framing"
-                >
-                  <Camera className="w-3.5 h-3.5 text-blue-400" />
-                  <span>Adjust Face &amp; Photo</span>
-                </button>
               </div>
             </div>
 

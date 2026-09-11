@@ -18,9 +18,9 @@ export const initialProfile: ProfileInfo = {
   linkedinUrl: 'https://www.linkedin.com/in/kendikreator',
   twitterUrl: 'https://x.com/kendikreator',
   portfolioUrl: 'https://kendikreator.dev',
-  avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80',
-  avatarPosition: 'center 18%',
-  avatarScale: 1.05,
+  avatarUrl: '/profile.jpg', // User uploaded their image here
+  avatarPosition: 'center 70%',
+  avatarScale: 1.0,
   yearsOfExperience: 2,
   projectsCompleted: 14,
   happyClients: 18,
